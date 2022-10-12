@@ -20,3 +20,7 @@ console.log(sayHello(null));
     //     return "Hello, Jane!";
     // }
 // }
+
+function isFive(num){
+    return num == 5;
+}
