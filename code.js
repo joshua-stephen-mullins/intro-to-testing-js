@@ -24,3 +24,11 @@ console.log(sayHello(null));
 function isFive(num){
     return num == 5;
 }
+
+function isEven(num){
+    if (typeof num == "boolean") {
+        return false
+    } else {
+    return num % 2 === 0;
+    }
+}
