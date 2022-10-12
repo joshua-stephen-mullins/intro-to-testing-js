@@ -32,3 +32,17 @@ function isEven(num){
     return num % 2 === 0;
     }
 }
+
+function isVowel(letter){
+    let vowels = "aeiou";
+    if (typeof letter !== 'string'){
+        return false;
+    } else {
+        return vowels.includes(letter.toLowerCase());
+    }
+}
+
+
+function add(num1, num2){
+    return parseFloat(num1) + parseFloat(num2);
+}
