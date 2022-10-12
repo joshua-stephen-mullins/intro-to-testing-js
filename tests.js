@@ -31,4 +31,23 @@ describe('sayHello', function() {
     it('should return a string of "Hello, Pat!" when input is "Pat".', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return a string of "Hello, World!" when input is undefined.', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return a string of "Hello, World!" when input is the boolean value of true.', function() {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return a string of "Hello, World!" when input is the boolean value of false.', function() {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return a string of "Hello, World!" when input is null.', function() {
+        expect(sayHello(null)).toBe("Hello, World!")
+    });
+    it('should return a string of "Hello, World!" when input is 23.', function() {
+        expect(sayHello(23)).toBe("Hello, World!")
+    });
+    it('should return a string of "Hello, World!" when input is "23".', function() {
+        expect(sayHello('23')).toBe("Hello, World!")
+    });
 });
+
